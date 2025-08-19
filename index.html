@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinay Kumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- 🌐 Navbar -->
+  <nav id="navbar">
+    <div class="logo">Vinay Kumar</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Internships</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="mode-toggle">🌙</button>
+  </nav>
+
+  <!-- 🎯 Hero -->
+  <header id="hero" class="hero fade-in">
+    <div class="container">
+      <h1 class="hero-heading">Hello, I'm <span>Vinay Kumar</span> 👋</h1>
+      <p class="typing"></p>
+      <p class="intro">Final-year B.Tech CSE (AI & ML) student passionate about Full-Stack Development, Cybersecurity, and AI.</p>
+    </div>
+    <div class="hero-buttons">
+      <a href="mailto:vinay.nani919@gmail.com" class="hero-btn left">📧 Mail</a>
+      <a href="https://www.linkedin.com/in/vinay-kakumani" target="_blank" class="hero-btn center">💼 LinkedIn</a>
+      <a href="https://github.com/vinaykumar-05" target="_blank" class="hero-btn right">🐙 GitHub</a>
+    </div>
+  </header>
+
+  <!-- 👤 About -->
+  <section id="about" class="fade-in about-section">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="assets/profile.jpg" alt="Vinay Kumar">
+      </div>
+      <div class="about-text">
+        <p>Motivated and detail-oriented final-year B.Tech student skilled in Python, Java, HTML, CSS, JavaScript, and Django.
+        Eager to apply full-stack development skills and problem-solving abilities in real-world projects. Committed to continuous learning, including AR & AI to drive innovation.</p>
+        <div class="about-stats">
+          <div class="stat-box"><strong>5+</strong> Projects</div>
+          <div class="stat-box"><strong>10+</strong> Certifications</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎓 Education -->
+  <section id="education" class="fade-in">
+    <h2>Education</h2>
+    <div class="education-grid">
+      <div class="education-card">
+        <h3>B.Tech in CSE (AI & ML)</h3>
+        <p>Andhra Loyola Institute of Engineering & Technology, Vijayawada (2022–2026)</p>
+        <p>CGPA: 8.0</p>
+      </div>
+      <div class="education-card">
+        <h3>Intermediate (MPC)</h3>
+        <p>NRI Junior College, Vijayawada (2020–2022)</p>
+        <p>Percentage: 92.5%</p>
+      </div>
+      <div class="education-card">
+        <h3>SSC</h3>
+        <p>NAVODAYA E.M High School, Vijayawada (2010–2020)</p>
+        <p>Percentage: 100%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🛠 Skills -->
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="technical-skills">
+        <h3>Technical Skills</h3>
+        <div class="skill-grid">
+          <div class="card">Python (Intermediate)</div>
+          <div class="card">Java (Beginner)</div>
+          <div class="card">C (Beginner)</div>
+          <div class="card">HTML, CSS, JavaScript</div>
+          <div class="card">Django, OpenCV</div>
+          <div class="card">Pandas, NumPy</div>
+          <div class="card">TensorFlow, PyTorch, Keras</div>
+          <div class="card">SQL, SQLite</div>
+          <div class="card">Git, GitHub, VS Code</div>
+        </div>
+      </div>
+      <div class="soft-skills">
+        <h3>Soft Skills</h3>
+        <div class="skill-grid">
+          <div class="card">Teamwork</div>
+          <div class="card">Leadership</div>
+          <div class="card">Creativity</div>
+          <div class="card">Problem-Solving</div>
+          <div class="card">Communication</div>
+          <div class="card">Adaptability</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📂 Projects -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/car-game.png" alt="Car Racing Game">
+        <h3>Car Racing Game (Python)</h3>
+        <p>2D racing game with collisions, dynamic scoring, and smooth controls using Pygame.</p>
+        <p><strong>Technologies:</strong> Python, Pygame, Tkinter</p>
+        <div class="project-buttons">
+          <a href="#" class="btn">Code</a>
+          <a href="#" class="btn">Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/library.png" alt="Library Management">
+        <h3>Library Management System (Java)</h3>
+        <p>GUI-based application for issuing and returning books, with data persistence and user-friendly interface.</p>
+        <p><strong>Technologies:</strong> Java, Swing</p>
+        <div class="project-buttons">
+          <a href="#" class="btn">Code</a>
+          <a href="#" class="btn">Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/ecommerce-frontend.png" alt="E-commerce Website">
+        <h3>E-commerce Website (Front-End)</h3>
+        <p>Responsive electronics store website with clean UI/UX and modern layout techniques.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        <div class="project-buttons">
+          <a href="#" class="btn">Code</a>
+          <a href="#" class="btn">Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/django-ecommerce.jpg" alt="Django E-commerce">
+        <h3>Django E-commerce Website</h3>
+        <p>Full-stack e-commerce platform with user authentication, product management, and dynamic routing.</p>
+        <p><strong>Technologies:</strong> Django, Python, SQLite</p>
+        <div class="project-buttons">
+          <a href="#" class="btn">Code</a>
+          <a href="#" class="btn">Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="assets/webcam-security.jpg" alt="Webcam Spyware Security">
+        <h3>Webcam Spyware Security (Python)</h3>
+        <p>Security tool to detect unauthorized webcam access. Implemented alert system, logging, and real-time notifications using Python and OpenCV.</p>
+        <p><strong>Technologies:</strong> Python, OpenCV, Security Concepts</p>
+        <div class="project-buttons">
+          <a href="#" class="btn">Code</a>
+          <a href="#" class="btn">Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💼 Internships -->
+  <section id="experience" class="fade-in">
+    <h2>Professional Experience</h2>
+    <div class="experience-grid">
+      <div class="experience-card">
+        <h3>💻 Cybersecurity Intern – Supraja Technologies (Remote)</h3>
+        <p>(May–Aug 2024)</p>
+        <p>Project: Webcam Spyware Security using Python. Developed a detection system to monitor unauthorized webcam access. Implemented alert system, logs, and real-time notifications using OpenCV and Python scripting.</p>
+        <p>Technologies Learned: Python, OpenCV, Security Concepts, Logging</p>
+      </div>
+      <div class="experience-card">
+        <h3>🌐 Web Development Intern – APSSDC (Remote)</h3>
+        <p>(May–Jul 2025)</p>
+        <p>Project: Django-based E-commerce Website. Built full-stack platform with product management, user authentication, dynamic routing, and admin dashboard. Ensured responsive and modern UI/UX for users.</p>
+        <p>Technologies Learned: Django, Python, HTML, CSS, JavaScript, SQLite</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🏆 Certifications & Achievements -->
+  <section id="certifications" class="fade-in">
+    <h2>Certifications & Achievements</h2>
+    <div class="cert-achieve-buttons">
+      <button id="certBtn" class="active">Certifications</button>
+      <button id="achieveBtn">Achievements</button>
+    </div>
+    <div id="certificationsBox" style="display:flex;flex-wrap:wrap;justify-content:center;">
+      <div class="cert-box"><a href="#">Accenture</a></div>
+      <div class="cert-box"><a href="#">APSSDC</a></div>
+      <div class="cert-box"><a href="#">AWS</a></div>
+      <div class="cert-box"><a href="#">Cisco</a></div>
+      <div class="cert-box"><a href="#">Deloitte</a></div>
+      <div class="cert-box"><a href="#">HP</a></div>
+      <div class="cert-box"><a href="#">Infosys Springboard</a></div>
+      <div class="cert-box"><a href="#">TCS</a></div>
+    </div>
+    <div id="achievementsBox" style="display:none;">
+      <div class="card">🏅 1st Prize – College Innovation Competition 2025</div>
+      <div class="card">💡 Participated in multiple hackathons</div>
+    </div>
+  </section>
+
+  <!-- 📬 Contact -->
+  <section id="contact" class="fade-in">
+    <h2>Let's Connect</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p>📧 vinay.nani919@gmail.com</p>
+        <p>📞 +91-7032753457</p>
+        <p>📍 Vijayawada, Andhra Pradesh-520010</p>
+        <a href="assets/Vinay_Kumar_Resume.pdf" class="btn" download>Download Resume</a>
+      </div>
+      <div class="contact-form-box">
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="text" id="subject" placeholder="Subject" required>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <p id="status"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Vinay Kumar | Built with 💜</p>
+  </footer>
+</body>
+</html>
